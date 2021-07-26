@@ -5,7 +5,7 @@ import Options from '../components/Options'
 export default function StarsWarsPage() {
 
     const [page,setPage] = useState('people')
-    const { error,loading,info } = useGetData({page: page})
+    const { error,loading,info } = useGetData(page)
 
 
 

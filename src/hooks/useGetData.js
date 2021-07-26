@@ -1,6 +1,6 @@
 import {useState,useEffect} from 'react'
 
-export function useGetData({page}) {
+export function useGetData(page) {
 
     const baseURL = 'https://swapi.dev/api/'
     const [info,setInfo] = useState([])
@@ -12,7 +12,7 @@ export function useGetData({page}) {
         fetch(`${baseURL}/${page}`)
         .then(res => res.json())
         .then(data => {
-            setInfo(data)
+            setInfo(data.results)
             setLoading(false)
 
         })
