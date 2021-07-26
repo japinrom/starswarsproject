@@ -1,13 +1,82 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
+
+.header { 
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.logo {
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 200;
+  color: #ddfa3a
+}
+
+.card {
+  width: 200px;
+  background-color: #1d1d1c;
+  border-radius: 5px;
+  border-bottom: 5px solid rgb(63, 63, 63);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  background-color: rgb(34, 34, 34);
+}
+
+.card img {
+width: 100%;
+height: 100px;
+object-fit:cover;
+}
+
+.list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  justify-items: center;
+  align-content: center;
+}
+
+.information {
+  padding: 14px;
+  font-size: 13px;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  padding-bottom: 40px;
+}
+
+.options div {
+  border: 1px solid yellow;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.options div:hover {
+
+  background-color: yellow;
+  color: black;
+  transition: all 0.4s;
+}
+
